@@ -103,12 +103,13 @@ body {
 
 
 /* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */
-#tridiv {
+#tridiv,
+#tridiv2,
+#tridiv3,
+#tridiv4 {
   perspective: 800px;
   position: absolute;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
   background: transparent;
   font-size: 100%;
 }
@@ -190,23 +191,23 @@ body {
 .cub-1 {
   transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   opacity:1;
-  width:10em;
-  height:10em;
-  margin:-5em 0 0 -5em;
+  width: 7.5em;
+  height: 7.5em;
+  margin: -3.75em 0 0 -3.75em;
 }
 .cub-1 .ft {
-  transform:translateZ(5em);
+  transform: translateZ(3.75em);
 }
 .cub-1 .bk {
-  transform:translateZ(-5em) rotateY(180deg);
+  transform:translateZ(-3.75em) rotateY(180deg);
 }
 .cub-1 .rt, .cub-1 .lt {
-  width:10em;
-  height:10em;
+  width: 7.5em;
+  height: 7.5em;
 }
 .cub-1 .tp, .cub-1 .bm {
-  width:10em;
-  height:10em;
+  width: 7.5em;
+  height: 7.5em;
 }
 .cub-1 .face {
   background-color:#FFFFFF;
@@ -246,11 +247,42 @@ body {
 }
 
 
-#tridiv .scene {
+
+#tridiv {
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 67%;
+}
+
+#tridiv2 {
+  left: 25%;
+  right: 25%;
+  top: 67%;
+  bottom: 0;
+}
+
+#tridiv3 {
+  left: 0;
+  right: 67%;
+  top: 25%;
+  bottom: 25%;
+}
+
+#tridiv4 {
+  left: 67%;
+  right: 0;
+  top: 25%;
+  bottom: 25%;
+}
+
+#tridiv .scene,
+#tridiv2 .scene,
+#tridiv3 .scene,
+#tridiv4 .scene {
     transform: rotateX(150deg) rotateY(150deg); 
     animation: 5s rotate infinite;
 }
-
 
 
 
